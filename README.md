@@ -1,6 +1,6 @@
 # URL Metadata Extractor
 
-This project was developed as part of a Python bootcamp hackathon at [VNRVJIET].
+This project was developed as part of a Python bootcamp hackathon at VNRVJIET.
 
 ## Project Description
 The URL Metadata Extractor is a web application created using Flask and Beautiful Soup. It extracts metadata (such as title, description, and thumbnail image) from a provided URL. The app allows users to input a URL, fetches information from the webpage, and displays relevant metadata.
