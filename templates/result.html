@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Metadata Extractor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .container h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .metadata {
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .desc span {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .metadata h2 span {
+            color: lightseagreen;
+        }
+
+        .thumb {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .history {
+            text-align: left;
+        }
+
+        .history h2 {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .history ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .history li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Metadata extracted from the URL</h1>
+    <div class="container">
+        <div class="metadata">
+            <h2>Title: <span>{{ title }}</span></h2>
+            <p class="desc"><span>Description:</span> {{ description }}</p>
+            <p class="thumb">Thumbnail:</p>
+            <img src="{{ thumbnail }}" alt="Thumbnail">
+        </div>
+    </div>
+</body>
+
+</html>
